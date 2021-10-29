@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bcff65460.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Async Await</title>
+</head>
+<body>
+    <div id="container">
+        <div id="input-container">
+            <div id="input">
+                <input type="text" id="city-name" placeholder="City or place">
+                <div id="request"><i class="fa fa-search"></i></div>
+            </div>
+        </div>
+        <div id="data-container">
+            <div class="grid-child" id="main-data">
+                <img src="" alt="Weather Icon" id="weather_icon">
+                <p id="weather"></p>
+                <i class="fas fa-solid fas fa-location-dot"></i>
+                <p id="name"></p>
+            </div>
+            <div class="grid-child">
+                <p>Temperature:</p>
+                <p id="temperature"></p>
+            </div>
+            <div class="grid-child">
+                <p>RealFeel:</p>
+                <p id="feels_like"></p>
+            </div>
+            <div class="grid-child">
+                <p>Wind Speed:</p>
+                <p id="wind_speed"></p>
+            </div>
+            <div class="grid-child">
+                <p>Humidity:</p>
+                <p id="humidity"></p>
+            </div>
+        </div>
+        <div id="no-data">
+            <p id="para_one">No Data</p>
+            <p id="para_two">Enter the location to see weather data</p>
+        </div>
+        <!--
+        <button id="request">Make a Request</button>
+        -->
+        <!--
+        <p id="name"></p>
+        <p id="weather"></p>
+        <p id="temperature"></p>
+        <p id="feels_like"></p>
+        <p id="wind_speed"></p>
+        -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
