@@ -29,8 +29,6 @@
 <main class="default-page">
     <InputDefault on:submit {location_text} bind:this={InputDefaultComponent} {trigger_save} />
     <section class="recent-locations">
-    
-        <h1 class="title">Recent Locations:</h1>
 
         <div class="content">
             {#if !recent_locations_available}
@@ -63,11 +61,6 @@
 		width: 75%;
         height: 75%;
 	}
-	.title{
-		color: white;
-		font-size: 30px;
-        margin-bottom: 30px;
-	}
     .content{
         width: 100%;
         height: 80%;
@@ -97,25 +90,28 @@
 
     /* Media Queries */
 
+    @media(max-height: 900px){
+        .locations-boxes{
+            height: fit-content;
+        }
+    }
+
     @media(max-width: 1750px){
         .content{
             height: 70%;
+        }
+        .locations-boxes{
+            height: fit-content;
         }
     }
     @media(max-width: 1600px){
         .recent-locations{
             width: 85%;
         }
-        .title{
-            font-size: 28px;
-        }
     }
     @media(max-width: 1500px){
         .recent-locations{
             width: 100%;
-        }
-        .title{
-            font-size: 26px;
         }
     }
     @media(max-width: 1250px){
@@ -126,12 +122,10 @@
         
         .locations-boxes{
             grid-template-columns: 48% 48%;
+            height: fit-content;
         }
         .content{
             height: 100%;
-        }
-        .title{
-            font-size: 24px;
         }
     
     }
@@ -146,9 +140,6 @@
         }
         .content{
             height: 100%;
-        }
-        .title{
-            font-size: 20px;
         }
         .nothing-to-show p{
             font-size: 26px;

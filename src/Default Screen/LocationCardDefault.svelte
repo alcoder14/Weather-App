@@ -74,6 +74,7 @@
         padding: 20px;
         background-color: #383838;
         border-radius: 20px;
+        margin: 0;
     }
     .location{
         font-size: 30px;
@@ -119,9 +120,11 @@
         font-size: 40px;
     }
 
-    /* Media Queries */
 
     @media(max-width: 1750px){
+        .card{
+            margin-bottom: 20px;
+        }
         h2{
             font-size: 36px;
         }   
@@ -193,7 +196,7 @@
             font-size: 19px;
         }
     }
-    @media(max-width: 1250px){
+    @media(max-width: 1750px){
         .card{
             margin-bottom: 20px;
         }

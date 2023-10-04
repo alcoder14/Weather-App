@@ -67,6 +67,7 @@
         display: flex;
         width: 50%;
         border-radius: 30px;
+        margin-bottom: 20px;
     }
     .empty{
         border: 2px #82E2E2 solid;
